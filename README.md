@@ -1,4 +1,4 @@
-This is a demo of [model-viewer](https://modelviewer.dev) in a [Next.js](https://nextjs.org/). The page renders a QR code to the site if the user is on desktop.
+This is a demo of [model-viewer](https://modelviewer.dev) in a [Next.js](https://nextjs.org/) project. The page renders a QR code to the site if the user is on desktop.
 
 ## Getting Started
 
