@@ -1,4 +1,5 @@
 import "../styles/globals.css"
+import "../styles/model.css"
 import "@fontsource/spline-sans"
 
 function MyApp ({ Component, pageProps }) {

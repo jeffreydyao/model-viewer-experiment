@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Cube } from "phosphor-react"
+import { Cube, CircleNotch } from "phosphor-react"
 import ReactDOM from "react-dom"
 import { createRoot } from "react-dom/client"
 import DeviceDetector from "device-detector-js"
@@ -67,16 +67,19 @@ export default function Home () {
 
       <div className='w-full flex justify-center'>
         <model-viewer
-          style={{ height: "500px" }}
+          style={{ height: "500px", width: "100%" }}
           bounds='tight'
           enable-pan
           src='/digisoc.glb'
+          poster={null}
           ar
           ar-modes='webxr scene-viewer quick-look'
           camera-controls
           environment-image='neutral'
           shadow-intensity='1'
-        ></model-viewer>
+        >
+          <div class='progress-bar hide' slot='progress-bar' />
+        </model-viewer>
       </div>
 
       <div id='view-on-mobile' />
